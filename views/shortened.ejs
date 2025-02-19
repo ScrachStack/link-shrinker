@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center mb-6">Your Shortened URL</h1>
+        <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <p class="text-lg mb-4">Your shortened URL is:</p>
+            <a href="/<%= shortUrl %>" class="text-blue-500 text-2xl font-semibold hover:text-blue-600"><%= shortUrl %></a>
+            <div class="mt-4">
+                <a href="/" class="text-blue-500 hover:text-blue-600">Go back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
