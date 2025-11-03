@@ -37,7 +37,8 @@ Once Nginx is installed you should be able to navigate to your servers IP and yo
 Your Server IP
 http://127.0.0.1 
 
-```
+> /etc/nginx/sites-available/default
+``` 
 
 server {
     
