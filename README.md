@@ -37,3 +37,15 @@ Once Nginx is installed you should be able to navigate to your servers IP and yo
 Your Server IP
 http://127.0.0.1 
 
+```
+
+server {
+    
+  server_name yourdomain.com; # Change domain to your domain
+    
+  location / {
+    proxy_pass http://localhost:3000; # Change the port if needed.
+    proxy_http_version 1.1;
+    proxy_set_header X-Real-IP $remote_addr;
+  }    
+}
