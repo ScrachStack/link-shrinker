@@ -50,3 +50,5 @@ server {
     proxy_set_header X-Real-IP $remote_addr;
   }    
 }
+```
+> Make sure to edit the ``.env`` file port if you are all ready running an app on 3000 and the above!
